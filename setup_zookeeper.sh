@@ -7,4 +7,4 @@ sudo ln -s /opt/apache-zookeeper-3.7.0-bin /opt/zookeeper
 sudo cp zoo.cfg /opt/zookeeper/conf/zoo.cfg
 
 sudo mkdir -p /var/lib/zookeeper
-sudo echo ${id} > /var/lib/zookeeper/myid
+sudo echo $1 > /var/lib/zookeeper/myid
