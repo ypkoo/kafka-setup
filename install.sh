@@ -3,7 +3,7 @@
 sudo yum install -y java-1.8.0-openjdk-devel.x86_64
 
 python3 create_configs.py $1
-sudo cat hosts >> /etc/hosts
+sudo bash -c 'cat hosts >> /etc/hosts'
 . setup_zookeeper.sh
 . setup_kafka.sh
 
