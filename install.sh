@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo yum install -y java-1.8.0-openjdk-devel.x86_64
+
 python3 create_configs.py $1
 sudo echo hosts >> /etc/hosts
 . setup_zookeeper.sh
