@@ -8,5 +8,5 @@ sudo bash -c 'cat hosts >> /etc/hosts'
 . setup_kafka.sh
 
 
-# sudo /opt/zookeeper/bin/zkServer.sh start
-# sudo /opt/kafka/bin/kafka-server-start.sh -daemon /opt/kafka/config/server.properties
+sudo /opt/zookeeper/bin/zkServer.sh start
+sudo /opt/kafka/bin/kafka-server-start.sh -daemon /opt/kafka/config/server.properties
